@@ -92,10 +92,30 @@
     url("/fonts/SFMono/SFMono-SemiboldItalic.woff2") format("woff2");
 }
 
-#__next {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+::selection {
+  background-color: #22d3ee;
+  color: #fff;
+}
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar Styles */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #94a3b8;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #94a3b8;
+  border: 3px solid #94a3b8;
+  border-radius: 10px;
 }
 
 .sticky-nav {

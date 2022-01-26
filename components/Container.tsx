@@ -5,6 +5,7 @@ import Head from "./Head";
 import NavItem from "./NavItem";
 import Social from "./Social";
 import Email from "./Email";
+import Footer from "./Footer";
 
 const Container = ({ children }: { children: React.ReactNode }) => {
   const [mounted, setMounted] = useState(false);
@@ -14,7 +15,7 @@ const Container = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => setMounted(true), []);
 
   return (
-    <div className="bg-slate-50 dark:bg-[#0B1120]">
+    <div className="flex flex-col min-h-screen bg-slate-50 dark:bg-[#0B1120]">
       <Head />
       <nav className="flex items-center justify-between w-full py-8 px-12 mx-auto my-0 text-gray-900 bg-slate-50 dark:bg-[#0B1120] sticky-nav bg-opacity-60">
         <a href="#skip" className="skip-nav">
@@ -53,20 +54,21 @@ const Container = ({ children }: { children: React.ReactNode }) => {
           )}
         </button>
         <div className="font-mono text-xs">
-          <NavItem href="/" text="01. Home" />
-          <NavItem href="/skills" text="02. Skills" />
-          <NavItem href="/projects" text="03. Projects" />
-          <NavItem href="/contact" text="04. Contact" />
+          <NavItem href="/#about" text="01. About" />
+          <NavItem href="/#skills" text="02. Skills" />
+          <NavItem href="/#projects" text="03. Projects" />
+          <NavItem href="/#contact" text="04. Contact" />
         </div>
       </nav>
       <Social />
-      <Email email="raghvendrrsingh@gmail.com" />
+      <Email email="email@gmail.com" />
       <main
         id="skip"
-        className="flex flex-col mx-auto w-full px-6 sm:px-24 lg:px-24 xl:px-4 max-w-5xl min-h-screen bg-slate-50 dark:bg-[#0B1120]"
+        className="flex flex-col mx-auto w-full px-6 md:px-[100px] xl:px-4 max-w-5xl min-h-screen bg-slate-50 dark:bg-[#0B1120]"
       >
         {children}
       </main>
+      <Footer />
     </div>
   );
 };
