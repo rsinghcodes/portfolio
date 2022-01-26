@@ -5,7 +5,7 @@ const head = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   const meta = {
-    title: "Raghvendra Singh – Front-end Developer",
+    title: "Raghvendra Singh – Frontend Developer",
     description: `Frontend developer and JavaScript enthusiast.`,
     // image: "https://rsinghcodes.vercel.app/static/images/banner.png",
     type: "website",
