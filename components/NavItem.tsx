@@ -14,7 +14,7 @@ function NavItem({ href, text }: { href: string; text: string }) {
           isActive
             ? 'font-semibold text-cyan-400 dark:text-cyan-300'
             : 'font-normal text-slate-600 dark:text-slate-300',
-          'hidden md:inline-block p-1 sm:px-3 sm:py-2 last-of-type:pr-0 rounded-lg transition-all hover:text-cyan-400 dark:hover:text-cyan-300'
+          'inline-block p-1 sm:px-3 sm:py-2 last-of-type:pr-0 rounded-lg transition-all hover:text-cyan-400 dark:hover:text-cyan-300'
         )}
       >
         <span className="capsize">{text}</span>
