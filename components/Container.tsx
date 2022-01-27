@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
+import React, { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
 
-import Head from "./Head";
-import NavItem from "./NavItem";
-import Social from "./Social";
-import Email from "./Email";
-import Footer from "./Footer";
+import Head from './Head';
+import NavItem from './NavItem';
+import Social from './Social';
+import Email from './Email';
+import Footer from './Footer';
 
 const Container = ({ children }: { children: React.ReactNode }) => {
   const [mounted, setMounted] = useState(false);
@@ -25,7 +25,7 @@ const Container = ({ children }: { children: React.ReactNode }) => {
           aria-label="Toggle Dark Mode"
           type="button"
           className="w-10 h-10 p-3 bg-gray-200 rounded dark:bg-gray-600"
-          onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+          onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
         >
           {mounted && (
             <svg
@@ -35,7 +35,7 @@ const Container = ({ children }: { children: React.ReactNode }) => {
               stroke="currentColor"
               className="w-4 h-4 text-gray-800 dark:text-gray-200"
             >
-              {resolvedTheme === "dark" ? (
+              {resolvedTheme === 'dark' ? (
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"

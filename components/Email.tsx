@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Email = ({ email }: { email: string }) => {
   return (
@@ -6,7 +6,7 @@ const Email = ({ email }: { email: string }) => {
       <div className="flex flex-col items-center relative after:block after:w-[1px] after:h-[90px] after:my-0 after:mx-auto after:bg-gray-600 dark:after:bg-slate-300">
         <a
           className="my-5 mx-auto p-2.5 font-mono text-xs leading-5 tracking-widest hover:-translate-y-1 focus:-translate-y-1 text-slate-600 dark:text-slate-300 hover:text-cyan-400 dark:hover:text-cyan-300"
-          style={{ writingMode: "vertical-rl" }}
+          style={{ writingMode: 'vertical-rl' }}
           href={`mailto:${email}`}
         >
           {email}

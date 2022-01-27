@@ -3,93 +3,93 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Calibre";
+  font-family: 'Calibre';
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url("/fonts/Calibre/Calibre-Regular.woff") format("woff"),
-    url("/fonts/Calibre/Calibre-Regular.woff2") format("woff2");
+  src: url('/fonts/Calibre/Calibre-Regular.woff') format('woff'),
+    url('/fonts/Calibre/Calibre-Regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Calibre";
+  font-family: 'Calibre';
   font-style: italic;
   font-weight: 400;
   font-display: auto;
-  src: url("/fonts/Calibre/Calibre-RegularItalic.woff") format("woff"),
-    url("/fonts/Calibre/Calibre-RegularItalic.woff2") format("woff2");
+  src: url('/fonts/Calibre/Calibre-RegularItalic.woff') format('woff'),
+    url('/fonts/Calibre/Calibre-RegularItalic.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Calibre";
+  font-family: 'Calibre';
   font-style: normal;
   font-weight: 500;
   font-display: auto;
-  src: url("/fonts/Calibre/Calibre-Medium.woff") format("woff"),
-    url("/fonts/Calibre/Calibre-Medium.woff2") format("woff2");
+  src: url('/fonts/Calibre/Calibre-Medium.woff') format('woff'),
+    url('/fonts/Calibre/Calibre-Medium.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Calibre";
+  font-family: 'Calibre';
   font-style: italic;
   font-weight: 500;
   font-display: auto;
-  src: url("/fonts/Calibre/Calibre-MediumItalic.woff") format("woff"),
-    url("/fonts/Calibre/Calibre-MediumItalic.woff2") format("woff2");
+  src: url('/fonts/Calibre/Calibre-MediumItalic.woff') format('woff'),
+    url('/fonts/Calibre/Calibre-MediumItalic.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Calibre";
+  font-family: 'Calibre';
   font-style: normal;
   font-weight: 600;
   font-display: auto;
-  src: url("/fonts/Calibre/Calibre-Semibold.woff") format("woff"),
-    url("/fonts/Calibre/Calibre-Semibold.woff2") format("woff2");
+  src: url('/fonts/Calibre/Calibre-Semibold.woff') format('woff'),
+    url('/fonts/Calibre/Calibre-Semibold.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "Calibre";
+  font-family: 'Calibre';
   font-style: italic;
   font-weight: 600;
   font-display: auto;
-  src: url("/fonts/Calibre/Calibre-SemiboldItalic.woff") format("woff"),
-    url("/fonts/Calibre/Calibre-SemiboldItalic.woff2") format("woff2");
+  src: url('/fonts/Calibre/Calibre-SemiboldItalic.woff') format('woff'),
+    url('/fonts/Calibre/Calibre-SemiboldItalic.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "SF Mono";
+  font-family: 'SF Mono';
   font-style: normal;
   font-weight: 400;
   font-display: auto;
-  src: url("/fonts/SFMono/SFMono-Regular.woff") format("woff"),
-    url("/fonts/SFMono/SFMono-Regular.woff2") format("woff2");
+  src: url('/fonts/SFMono/SFMono-Regular.woff') format('woff'),
+    url('/fonts/SFMono/SFMono-Regular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "SF Mono";
+  font-family: 'SF Mono';
   font-style: italic;
   font-weight: 400;
   font-display: auto;
-  src: url("/fonts/SFMono/SFMono-RegularItalic.woff") format("woff"),
-    url("/fonts/SFMono/SFMono-RegularItalic.woff2") format("woff2");
+  src: url('/fonts/SFMono/SFMono-RegularItalic.woff') format('woff'),
+    url('/fonts/SFMono/SFMono-RegularItalic.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "SF Mono";
+  font-family: 'SF Mono';
   font-style: normal;
   font-weight: 600;
   font-display: auto;
-  src: url("/fonts/SFMono/SFMono-Semibold.woff") format("woff"),
-    url("/fonts/SFMono/SFMono-Semibold.woff2") format("woff2");
+  src: url('/fonts/SFMono/SFMono-Semibold.woff') format('woff'),
+    url('/fonts/SFMono/SFMono-Semibold.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "SF Mono";
+  font-family: 'SF Mono';
   font-style: italic;
   font-weight: 600;
   font-display: auto;
-  src: url("/fonts/SFMono/SFMono-SemiboldItalic.woff") format("woff"),
-    url("/fonts/SFMono/SFMono-SemiboldItalic.woff2") format("woff2");
+  src: url('/fonts/SFMono/SFMono-SemiboldItalic.woff') format('woff'),
+    url('/fonts/SFMono/SFMono-SemiboldItalic.woff2') format('woff2');
 }
 
 ::selection {

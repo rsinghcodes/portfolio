@@ -1,8 +1,8 @@
-import cn from "classnames";
-import Link from "next/link";
-import useDelayedRender from "use-delayed-render";
-import { useState, useEffect } from "react";
-import styles from "styles/mobile-menu.module.css";
+import cn from 'classnames';
+import Link from 'next/link';
+import useDelayedRender from 'use-delayed-render';
+import { useState, useEffect } from 'react';
+import styles from 'styles/mobile-menu.module.css';
 
 export default function MobileMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,23 +17,23 @@ export default function MobileMenu() {
   function toggleMenu() {
     if (isMenuOpen) {
       setIsMenuOpen(false);
-      document.body.style.overflow = "";
+      document.body.style.overflow = '';
     } else {
       setIsMenuOpen(true);
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden';
     }
   }
 
   useEffect(() => {
     return function cleanup() {
-      document.body.style.overflow = "";
+      document.body.style.overflow = '';
     };
   }, []);
 
   return (
     <>
       <button
-        className={cn(styles.burger, "visible md:hidden")}
+        className={cn(styles.burger, 'visible md:hidden')}
         aria-label="Toggle menu"
         type="button"
         onClick={toggleMenu}
@@ -45,13 +45,13 @@ export default function MobileMenu() {
         <ul
           className={cn(
             styles.menu,
-            "flex flex-col absolute bg-gray-100 dark:bg-gray-900",
+            'flex flex-col absolute bg-gray-100 dark:bg-gray-900',
             isMenuRendered && styles.menuRendered
           )}
         >
           <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: "150ms" }}
+            style={{ transitionDelay: '150ms' }}
           >
             <Link href="/">
               <a className="flex w-auto pb-4">Home</a>
@@ -59,7 +59,7 @@ export default function MobileMenu() {
           </li>
           <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: "175ms" }}
+            style={{ transitionDelay: '175ms' }}
           >
             <Link href="/guestbook">
               <a className="flex w-auto pb-4">Guestbook</a>
@@ -67,7 +67,7 @@ export default function MobileMenu() {
           </li>
           <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: "200ms" }}
+            style={{ transitionDelay: '200ms' }}
           >
             <Link href="/dashboard">
               <a className="flex w-auto pb-4">Dashboard</a>
@@ -75,7 +75,7 @@ export default function MobileMenu() {
           </li>
           <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: "250ms" }}
+            style={{ transitionDelay: '250ms' }}
           >
             <Link href="/blog">
               <a className="flex w-auto pb-4">Blog</a>
@@ -83,7 +83,7 @@ export default function MobileMenu() {
           </li>
           <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: "275ms" }}
+            style={{ transitionDelay: '275ms' }}
           >
             <Link href="/snippets">
               <a className="flex w-auto pb-4">Snippets</a>
@@ -91,7 +91,7 @@ export default function MobileMenu() {
           </li>
           <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: "300ms" }}
+            style={{ transitionDelay: '300ms' }}
           >
             <Link href="/newsletter">
               <a className="flex w-auto pb-4">Newsletter</a>
@@ -99,7 +99,7 @@ export default function MobileMenu() {
           </li>
           <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: "325ms" }}
+            style={{ transitionDelay: '325ms' }}
           >
             <Link href="/tweets">
               <a className="flex w-auto pb-4">Tweets</a>
@@ -107,7 +107,7 @@ export default function MobileMenu() {
           </li>
           <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: "350ms" }}
+            style={{ transitionDelay: '350ms' }}
           >
             <Link href="/uses">
               <a className="flex w-auto pb-4">Uses</a>
@@ -119,7 +119,7 @@ export default function MobileMenu() {
   );
 }
 
-function MenuIcon(props: JSX.IntrinsicElements["svg"]) {
+function MenuIcon(props: JSX.IntrinsicElements['svg']) {
   return (
     <svg
       className="h-5 w-5 absolute text-gray-900 dark:text-gray-100"
@@ -147,7 +147,7 @@ function MenuIcon(props: JSX.IntrinsicElements["svg"]) {
   );
 }
 
-function CrossIcon(props: JSX.IntrinsicElements["svg"]) {
+function CrossIcon(props: JSX.IntrinsicElements['svg']) {
   return (
     <svg
       className="h-5 w-5 absolute text-gray-900 dark:text-gray-100"

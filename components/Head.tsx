@@ -1,14 +1,14 @@
-import Head from "next/head";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 const head = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   const meta = {
-    title: "Raghvendra Singh – Frontend Developer",
+    title: 'Raghvendra Singh – Frontend Developer',
     description: `Frontend developer and JavaScript enthusiast.`,
     // image: "https://rsinghcodes.vercel.app/static/images/banner.png",
-    type: "website",
+    type: 'website',
   };
 
   return (
