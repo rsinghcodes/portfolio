@@ -7,7 +7,7 @@ const Skills = () => {
       id="skills"
       className="flex flex-col justify-center w-full max-w-[700px] min-h-screen"
     >
-      <h2 className="flex items-center relative mx-0 mb-10 w-full text-2xl md:text-3xl font-semibold leading-tight whitespace-nowrap before:relative before:bottom-1 before:content-['02.'] before:mr-2.5 before:text-cyan-400 before:font-mono before:text-xl md:before:text-2xl before:font-normal after:block after:relative after:-top-[5px] after:w-full after:md:w-[200px] after:xl:w-[300px] after:h-[1px] after:m-[10px] after:sm:ml-5 after:bg-slate-600">
+      <h2 className="flex items-center relative mx-0 mb-10 w-full text-slate-900 dark:text-slate-100 text-2xl md:text-3xl font-semibold leading-tight whitespace-nowrap before:relative before:bottom-1 before:content-['02.'] before:mr-2.5 before:text-cyan-400 before:font-mono before:text-xl md:before:text-2xl before:font-normal after:block after:relative after:-top-[5px] after:w-full after:md:w-[200px] after:xl:w-[300px] after:h-[1px] after:m-[10px] after:sm:ml-5 after:bg-slate-600">
         Tech Stack, I Know
       </h2>
       <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-6">
@@ -149,6 +149,25 @@ const Skills = () => {
               MySQL
             </p>
           </div>
+        </div>
+      </div>
+
+      <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 ml-2 mt-10">
+        Data Structures and Algorithms
+      </p>
+      <div className="w-full h-4 origin-left bg-slate-200 dark:bg-slate-800 rounded-2xl ring-1 ring-slate-700/5 p-0 flex items-center dark:text-white dark:highlight-white/10 transform-none">
+        <div className="w-[70%] h-4 origin-left rounded-2xl px-1 flex items-center bg-cyan-400 dark:bg-cyan-600 text-white dark:highlight-white/10 transform-none">
+          <span className="flex-auto text-center -mb-1">70%</span>
+          <div className="flex-none w-0.5 h-1 bg-slate-300 dark:bg-white"></div>
+        </div>
+      </div>
+      <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 ml-2 mt-5">
+        Operating Systems
+      </p>
+      <div className="w-full h-4 origin-left bg-slate-200 dark:bg-slate-800 rounded-2xl ring-1 ring-slate-700/5 p-0 flex items-center dark:text-white dark:highlight-white/10 transform-none">
+        <div className="w-[60%] h-4 origin-left rounded-2xl px-1 flex items-center bg-cyan-400 dark:bg-cyan-600 text-white dark:highlight-white/10 transform-none">
+          <span className="flex-auto text-center -mb-1">60%</span>
+          <div className="flex-none w-0.5 h-1 bg-slate-300 dark:bg-white"></div>
         </div>
       </div>
     </section>

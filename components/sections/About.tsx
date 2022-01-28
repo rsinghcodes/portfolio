@@ -6,7 +6,7 @@ const About = () => {
       id="about"
       className="flex flex-col justify-center w-full min-h-screen"
     >
-      <h2 className="flex items-center relative mx-0 mb-10 w-full text-2xl md:text-3xl font-semibold leading-tight whitespace-nowrap before:relative before:bottom-1 before:content-['01.'] before:mr-2.5 before:text-cyan-400 before:font-mono before:text-xl md:before:text-2xl before:font-normal after:block after:relative after:-top-[5px] after:w-full after:md:w-[200px] after:xl:w-[300px] after:h-[1px] after:m-[10px] after:sm:ml-5 after:bg-slate-600">
+      <h2 className="flex items-center relative mx-0 mb-10 w-full text-slate-900 dark:text-slate-100 text-2xl md:text-3xl font-semibold leading-tight whitespace-nowrap before:relative before:bottom-1 before:content-['01.'] before:mr-2.5 before:text-cyan-400 before:font-mono before:text-xl md:before:text-2xl before:font-normal after:block after:relative after:-top-[5px] after:w-full after:md:w-[200px] after:xl:w-[300px] after:h-[1px] after:m-[10px] after:sm:ml-5 after:bg-slate-600">
         About me
       </h2>
       <div className="relative overflow-hidden shadow-xl flex bg-slate-50 sm:rounded-xl dark:bg-slate-800/70 dark:backdrop-blur ring-1 ring-inset ring-slate-500/30 dark:ring-white/10">

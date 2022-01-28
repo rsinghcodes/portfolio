@@ -8,6 +8,8 @@ const Email = ({ email }: { email: string }) => {
           className="my-5 mx-auto p-2.5 font-mono text-xs leading-5 tracking-widest hover:-translate-y-1 focus:-translate-y-1 text-slate-600 dark:text-slate-400 hover:text-cyan-400 dark:hover:text-cyan-300"
           style={{ writingMode: 'vertical-rl' }}
           href={`mailto:${email}`}
+          target="_blank"
+          rel="noreferrer"
         >
           {email}
         </a>

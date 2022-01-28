@@ -44,7 +44,12 @@ const Footer = () => {
         </ul>
       </div>
       <div className="text-slate-600 dark:text-slate-400 text-xs font-mono leading-4">
-        <a className="p-2.5" href="https://github.com/">
+        <a
+          className="p-2.5"
+          href="https://github.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
           Designed &amp; Built by Raghvendra Singh
         </a>
       </div>

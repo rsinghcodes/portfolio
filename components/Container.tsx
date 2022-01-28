@@ -1,24 +1,61 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
-import Head from './Head';
 import NavItem from './NavItem';
 import Social from './Social';
 import Email from './Email';
 import Footer from './Footer';
 import MobileMenu from './MobileMenu';
 
-const Container = ({ children }: { children: React.ReactNode }) => {
+const Container = ({
+  children,
+  ...customMeta
+}: {
+  children: React.ReactNode;
+}) => {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
 
   // After mounting, we have access to the theme
   useEffect(() => setMounted(true), []);
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const router = useRouter();
+  const meta = {
+    title: 'Raghvendra Singh - Frontend Developer',
+    description: `Frontend developer and JavaScript enthusiast.`,
+    // image: "https://rsinghcodes.vercel.app/static/images/banner.png",
+    type: 'website',
+    ...customMeta,
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-slate-50 dark:bg-slate-900">
-      <Head />
-      <nav className="flex items-center justify-between w-full py-8 px-6 md:px-12 mx-auto my-0 text-gray-900 bg-slate-50 dark:bg-slate-900 sticky-nav bg-opacity-60">
+      <Head>
+        <title>{meta.title}</title>
+        <meta name="robots" content="follow, index" />
+        <meta content={meta.description} name="description" />
+        {/* <meta
+          property="og:url"
+          content={`https://rsinghcodes.vercel.app${router.asPath}`}
+        />
+        <link
+          rel="canonical"
+          href={`https://rsinghcodes.vercel.app${router.asPath}`}
+        /> */}
+        <meta property="og:type" content={meta.type} />
+        <meta property="og:site_name" content="Raghvendra Singh" />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:title" content={meta.title} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@raghvendrrsingh" />
+        <meta name="twitter:title" content={meta.title} />
+        <meta name="twitter:description" content={meta.description} />
+        {/* <meta name="twitter:image" content={meta.image} /> */}
+      </Head>
+      <nav className="flex items-center justify-between w-full py-8 px-6 md:px-12 mx-auto my-0 text-gray-900 dark:bg-slate-900 sticky-nav bg-opacity-60">
         <a href="#skip" className="skip-nav">
           Skip to content
         </a>
@@ -66,7 +103,7 @@ const Container = ({ children }: { children: React.ReactNode }) => {
       <Email email="email@gmail.com" />
       <main
         id="skip"
-        className="flex flex-col items-center mx-auto w-full px-6 md:px-[100px] xl:px-4 max-w-5xl min-h-screen bg-slate-50 dark:bg-slate-900"
+        className="flex flex-col items-center mx-auto w-full px-6 md:px-[100px] xl:px-4 max-w-5xl min-h-screen"
       >
         {children}
       </main>
