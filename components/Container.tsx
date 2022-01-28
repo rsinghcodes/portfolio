@@ -16,9 +16,9 @@ const Container = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => setMounted(true), []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-slate-50 dark:bg-[#0B1120]">
+    <div className="flex flex-col min-h-screen bg-slate-50 dark:bg-slate-900">
       <Head />
-      <nav className="flex items-center justify-between w-full py-8 px-6 md:px-12 mx-auto my-0 text-gray-900 bg-slate-50 dark:bg-[#0B1120] sticky-nav bg-opacity-60">
+      <nav className="flex items-center justify-between w-full py-8 px-6 md:px-12 mx-auto my-0 text-gray-900 bg-slate-50 dark:bg-slate-900 sticky-nav bg-opacity-60">
         <a href="#skip" className="skip-nav">
           Skip to content
         </a>
@@ -54,7 +54,8 @@ const Container = ({ children }: { children: React.ReactNode }) => {
             </svg>
           )}
         </button>
-        <div className="font-mono text-xs hidden md:block">
+        <div className="font-mono text-xs">
+          <MobileMenu />
           <NavItem href="/#about" text="01. About" />
           <NavItem href="/#skills" text="02. Skills" />
           <NavItem href="/#projects" text="03. Projects" />
@@ -65,7 +66,7 @@ const Container = ({ children }: { children: React.ReactNode }) => {
       <Email email="email@gmail.com" />
       <main
         id="skip"
-        className="flex flex-col items-center mx-auto w-full px-6 md:px-[100px] xl:px-4 max-w-5xl min-h-screen bg-slate-50 dark:bg-[#0B1120]"
+        className="flex flex-col items-center mx-auto w-full px-6 md:px-[100px] xl:px-4 max-w-5xl min-h-screen bg-slate-50 dark:bg-slate-900"
       >
         {children}
       </main>

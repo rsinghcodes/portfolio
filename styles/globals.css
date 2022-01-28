@@ -93,29 +93,24 @@
 }
 
 ::selection {
-  background-color: #22d3ee;
-  color: #fff;
+  @apply bg-cyan-400 text-slate-50 dark:bg-cyan-600;
 }
 
 html {
-  box-sizing: border-box;
-  width: 100%;
-  scroll-behavior: smooth;
+  @apply box-border w-full scroll-smooth;
 }
 
 /* Scrollbar Styles */
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #94a3b8;
-}
 body::-webkit-scrollbar {
-  width: 8px;
+  @apply w-1.5;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-slate-50 dark:bg-slate-900;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #94a3b8;
-  border: 3px solid #94a3b8;
-  border-radius: 10px;
+  @apply bg-slate-400/80 dark:bg-slate-600 rounded-[10px];
 }
 
 .sticky-nav {
