@@ -13,7 +13,7 @@ const Hero = () => {
       <h1 className="font-bold text-[40px] leading-[1.1] md:text-7xl tracking-tight mt-2.5 text-slate-600 dark:text-slate-300">
         I build things for the web.
       </h1>
-      <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 mt-5 w-full max-w-xl">
+      <p className="text-base md:text-lg text-slate-600 dark:text-slate-400 mt-5 w-full max-w-xl">
         I&apos;m a developer with a knack of learning something new everyday,
         working to better understand how to make scalable Softwares which can be
         highly impactful. I am a fun-loving, goal-oriented, optimistic

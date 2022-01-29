@@ -32,7 +32,7 @@ const Container = ({
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-slate-50 dark:bg-slate-900">
+    <div className="flex flex-col min-h-screen bg-slate-100 dark:bg-slate-900">
       <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -55,7 +55,7 @@ const Container = ({
         <meta name="twitter:description" content={meta.description} />
         {/* <meta name="twitter:image" content={meta.image} /> */}
       </Head>
-      <nav className="flex items-center justify-between w-full py-8 px-6 md:px-12 mx-auto my-0 text-gray-900 dark:bg-slate-900 sticky-nav bg-opacity-60">
+      <nav className="flex items-center justify-between w-full py-8 px-6 md:px-12 mx-auto my-0 bg-slate-100 dark:bg-slate-900 sticky-nav bg-opacity-60">
         <a href="#skip" className="skip-nav">
           Skip to content
         </a>

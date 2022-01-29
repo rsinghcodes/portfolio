@@ -12,7 +12,6 @@ module.exports = {
         sans: ['"Calibre"', ...fontFamily.sans],
         mono: ['SF Mono', ...fontFamily.mono],
       },
-      fontSize: { '7xl': ['5rem', '1'] },
     },
   },
   plugins: [],

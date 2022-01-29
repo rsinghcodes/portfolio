@@ -46,7 +46,7 @@ export default function MobileMenu() {
         <ul
           className={cn(
             styles.menu,
-            'flex flex-col absolute bg-slate-50 dark:bg-slate-900',
+            'flex flex-col absolute bg-slate-100 dark:bg-slate-900',
             isMenuRendered && styles.menuRendered
           )}
         >
@@ -55,7 +55,9 @@ export default function MobileMenu() {
             style={{ transitionDelay: '150ms' }}
           >
             <Link href="/#about">
-              <a className="flex w-auto pb-4">About</a>
+              <a className="flex w-auto pb-4" onClick={toggleMenu}>
+                About
+              </a>
             </Link>
           </li>
           <li
@@ -63,7 +65,9 @@ export default function MobileMenu() {
             style={{ transitionDelay: '175ms' }}
           >
             <Link href="/#skills">
-              <a className="flex w-auto pb-4">Skills</a>
+              <a className="flex w-auto pb-4" onClick={toggleMenu}>
+                Skills
+              </a>
             </Link>
           </li>
           <li
@@ -71,7 +75,9 @@ export default function MobileMenu() {
             style={{ transitionDelay: '200ms' }}
           >
             <Link href="/#projects">
-              <a className="flex w-auto pb-4">Projects</a>
+              <a className="flex w-auto pb-4" onClick={toggleMenu}>
+                Projects
+              </a>
             </Link>
           </li>
           <li
@@ -79,7 +85,9 @@ export default function MobileMenu() {
             style={{ transitionDelay: '350ms' }}
           >
             <Link href="/#contact">
-              <a className="flex w-auto pb-4">Contact</a>
+              <a className="flex w-auto pb-4" onClick={toggleMenu}>
+                Contact
+              </a>
             </Link>
           </li>
         </ul>

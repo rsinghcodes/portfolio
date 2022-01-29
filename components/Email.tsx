@@ -9,7 +9,7 @@ const Email = ({ email }: { email: string }) => {
           style={{ writingMode: 'vertical-rl' }}
           href={`mailto:${email}`}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           {email}
         </a>
