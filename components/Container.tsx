@@ -25,7 +25,7 @@ const Container = ({
   const router = useRouter();
   const meta = {
     title: 'Raghvendra Singh - Frontend Developer',
-    description: `Frontend developer and JavaScript enthusiast.`,
+    description: `Frontend developer`,
     // image: "https://rsinghcodes.vercel.app/static/images/banner.png",
     type: 'website',
     ...customMeta,

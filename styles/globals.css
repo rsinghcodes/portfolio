@@ -106,7 +106,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  @apply bg-slate-50 dark:bg-slate-900;
+  @apply bg-slate-100 dark:bg-slate-900;
 }
 
 body::-webkit-scrollbar-thumb {
