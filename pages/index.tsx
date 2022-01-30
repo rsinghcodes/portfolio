@@ -5,7 +5,7 @@ import { Hero, About, Skills, Projects, Contact } from '../components/sections';
 
 const Home: NextPage = () => {
   return (
-    <Container>
+    <Container title="Raghvendra Singh">
       <Hero />
       <About />
       <Skills />

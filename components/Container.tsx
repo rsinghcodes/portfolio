@@ -10,12 +10,12 @@ import MobileMenu from './MobileMenu';
 
 import { email } from '../data/data';
 
-const Container = ({
-  children,
-  ...customMeta
-}: {
+interface ContainerPropsType {
   children: React.ReactNode;
-}) => {
+  title: string;
+}
+
+const Container = ({ children, title }: ContainerPropsType) => {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
 
@@ -25,11 +25,10 @@ const Container = ({
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   const meta = {
-    title: 'Raghvendra Singh',
+    title: title,
     description: `Developer with passion for Computer Science`,
     // image: "https://rsinghcodes.vercel.app/static/images/banner.png",
     type: 'website',
-    ...customMeta,
   };
 
   return (
