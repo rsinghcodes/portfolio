@@ -5,7 +5,7 @@ import Container from '../components/Container';
 
 const NotFound = () => {
   return (
-    <Container title="404 - Raghvendra Singh">
+    <Container title="Page Not Found | Raghvendra Singh">
       <section className="flex flex-col justify-center items-center w-full max-w-xl min-h-screen">
         <h4 className="font-mono font-normal text-md text-cyan-400 dark:text-cyan-300 mb-5 before:relative before:content-[''] before:mr-2.5 before:text-cyan-400 dark:before:text-cyan-300 before:text-sm md:before:text-md before:font-normal">
           Oops! Page Not Found

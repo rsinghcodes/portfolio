@@ -5,9 +5,10 @@ import { useRouter } from 'next/router';
 
 import NavItem from './NavItem';
 import Social from './Social';
-import Email from './Email';
 import Footer from './Footer';
 import MobileMenu from './MobileMenu';
+
+import { email } from '../data/data';
 
 const Container = ({
   children,
@@ -24,8 +25,8 @@ const Container = ({
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   const meta = {
-    title: 'Raghvendra Singh - Frontend Developer',
-    description: `Frontend developer`,
+    title: 'Raghvendra Singh',
+    description: `Developer with passion for Computer Science`,
     // image: "https://rsinghcodes.vercel.app/static/images/banner.png",
     type: 'website',
     ...customMeta,
@@ -55,6 +56,7 @@ const Container = ({
         <meta name="twitter:description" content={meta.description} />
         {/* <meta name="twitter:image" content={meta.image} /> */}
       </Head>
+
       <nav className="flex items-center justify-between w-full py-8 px-6 md:px-12 mx-auto my-0 bg-slate-100 dark:bg-slate-900 sticky-nav bg-opacity-60">
         <a href="#skip" className="skip-nav">
           Skip to content
@@ -99,14 +101,36 @@ const Container = ({
           <NavItem href="/#contact" text="04. Contact" />
         </div>
       </nav>
+
+      {/* ------------------------------------------Social Icons ---------------------------------------- */}
+
       <Social />
-      <Email email="email@gmail.com" />
+
+      {/* -------------------------------------------- Email -------------------------------------------- */}
+
+      {email && (
+        <div className="w-10 fixed bottom-0 left-auto right-10 z-10 hidden md:block">
+          <div className="flex flex-col items-center relative after:block after:w-[1px] after:h-[90px] after:my-0 after:mx-auto after:bg-gray-600 dark:after:bg-slate-400">
+            <a
+              className="my-5 mx-auto p-2.5 font-mono text-xs leading-5 tracking-widest hover:-translate-y-1 focus:-translate-y-1 text-slate-600 dark:text-slate-400 hover:text-cyan-400 dark:hover:text-cyan-300"
+              style={{ writingMode: 'vertical-rl' }}
+              href={`mailto:${email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {email}
+            </a>
+          </div>
+        </div>
+      )}
+
       <main
         id="skip"
         className="flex flex-col items-center mx-auto w-full px-6 md:px-[100px] xl:px-4 max-w-5xl min-h-screen"
       >
         {children}
       </main>
+
       <Footer />
     </div>
   );
