@@ -1,12 +1,23 @@
-import { FiCode, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { SiHackerrank } from 'react-icons/si';
 
-export const email = 'email@gmail.com';
+export const email = 'raghvendrrsingh@gmail.com';
 
 export const socials = [
-  { link: 'https://github.com/', icon: <FiGithub size={20} /> },
-  { link: 'https://hackerrank.com/', icon: <FiCode size={20} /> },
-  { link: 'https://twitter.com/', icon: <FiTwitter size={20} /> },
-  { link: 'https://linkedin.com/in/', icon: <FiLinkedin size={20} /> },
+  { link: 'https://github.com/rsinghcodes', icon: <FiGithub size={20} /> },
+
+  {
+    link: 'https://twitter.com/raghvendrrsingh',
+    icon: <FiTwitter size={20} />,
+  },
+  {
+    link: 'https://linkedin.com/in/raghvendrrsingh',
+    icon: <FiLinkedin size={20} />,
+  },
+  {
+    link: 'https://hackerrank.com/rsinghcodes',
+    icon: <SiHackerrank size={20} />,
+  },
 ];
 
 export const skills = [
@@ -38,23 +49,37 @@ export const projects = [
     description:
       'ReadList is a blog web application where people can share writings, content and their ideas online. This app allows readers to read, like, comment and share on social handles.',
     techs: ['ReactJS', 'ChakraUI', 'GraphQL', 'MongoDB'],
-    code: 'https://github.com/',
-    live: 'https://twitter.com/',
+    code: 'https://github.com/rsinghcodes/ReadList',
+    live: 'https://readlistapp.netlify.app/',
   },
   {
     name: 'MyMart',
     description:
       ' An online mini-mart store where the user can do shopping of daily essentials and grocery. Stripe payment gateway as an online payment option and Google Sign-In Authentication workflow.',
     techs: ['ReactJS', 'Redux', 'M-UI', 'Firebase'],
-    code: 'https://github.com/',
-    live: 'https://github.com/',
+    code: 'https://github.com/rsinghcodes/mymart',
+    live: 'https://mymartstore.netlify.app/',
   },
   {
     name: 'Bulletin Board',
     description:
       'An app to write anything on the board like reading list, brainstorming ideas, upcoming appointments, to-do lists, and many more creative things.',
     techs: ['ReactJS', 'ChakraUI'],
-    code: 'https://github.com/',
-    live: 'https://github.com/',
+    code: 'https://github.com/rsinghcodes/Bulletin-Board',
+    live: 'https://boardbulletin.netlify.app/',
+  },
+  {
+    name: 'Github Profiles',
+    description:
+      'This app gets the profile of a github user using their github username. Displays user name, user bio, number of following, number of followers, number of repositories, etc.',
+    techs: ['ReactJS', 'CSS3'],
+    code: 'https://github.com/rsinghcodes/github-profiles',
+    live: 'https://profilesgithub.netlify.app/',
+  },
+  {
+    name: 'Word Scramble Game',
+    description: 'Guess the correct word from the given scrambled word.',
+    techs: ['HTML5', 'CSS3', 'JavaScript'],
+    code: 'https://github.com/rsinghcodes/Word-Scramble-Game',
   },
 ];

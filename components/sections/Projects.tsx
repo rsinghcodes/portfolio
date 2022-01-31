@@ -8,7 +8,7 @@ const Projects = () => {
       id="projects"
       className="flex flex-col justify-center w-full min-h-screen"
     >
-      <h2 className="flex items-center relative mx-0 mb-10 w-full text-slate-900 dark:text-slate-100 text-2xl sm:text-3xl font-semibold leading-tight whitespace-nowrap before:relative before:bottom-1 before:content-['03.'] before:mr-2.5 before:text-cyan-400 before:font-mono before:text-xl md:before:text-2xl before:font-normal after:block after:relative after:-top-[5px] after:w-full after:md:w-[200px] after:xl:w-[300px] after:h-[1px] after:m-[10px] after:sm:ml-5 after:bg-slate-600">
+      <h2 className="flex items-center relative mx-0 mb-10 w-full text-slate-800 dark:text-slate-300 text-[26px] sm:text-[2rem] font-semibold leading-tight whitespace-nowrap before:relative before:bottom-1 before:content-['03.'] before:mr-2.5 before:text-cyan-400 before:font-mono before:text-xl md:before:text-2xl before:font-normal after:block after:relative after:-top-[5px] after:w-full after:md:w-[200px] after:xl:w-[300px] after:h-[1px] after:m-[10px] after:sm:ml-5 after:bg-slate-600">
         Projects I&apos;ve Built
       </h2>
       <ul className="grid gap-4 relative grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 p-0 m-0 list-none">
@@ -33,19 +33,21 @@ const Projects = () => {
                     >
                       <FiGithub size={20} />
                     </a>
-                    <a
-                      className="relative z-[1] flex justify-center items-center p-2.5 hover:text-cyan-400 dark:hover:text-cyan-300"
-                      href={live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FiExternalLink size={20} />
-                    </a>
+                    {live && (
+                      <a
+                        className="relative z-[1] flex justify-center items-center p-2.5 hover:text-cyan-400 dark:hover:text-cyan-300"
+                        href={live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FiExternalLink size={20} />
+                      </a>
+                    )}
                   </div>
                 </div>
-                <h3 className="text-xl sm:text-[22px] font-semibold text-slate-800 dark:text-slate-300 group-hover:text-cyan-400 dark:group-hover:text-cyan-300 mb-3">
+                <h3 className="text-[22px] font-semibold text-slate-800 dark:text-slate-300 group-hover:text-cyan-400 dark:group-hover:text-cyan-300 mb-3">
                   <a
-                    href={live}
+                    href={live ? live : code}
                     target="_blank"
                     rel="noreferrer"
                     className="static before:block before:absolute before:z-0 before:w-full before:h-full before:top-0 before:left-0"
@@ -53,7 +55,7 @@ const Projects = () => {
                     {name}
                   </a>
                 </h3>
-                <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400">
+                <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400">
                   {description}
                 </p>
                 <ul className="flex items-end flex-wrap flex-grow mt-5 p-0 list-none">

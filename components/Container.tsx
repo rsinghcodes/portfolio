@@ -37,14 +37,14 @@ const Container = ({ children, title }: ContainerPropsType) => {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        {/* <meta
+        <meta
           property="og:url"
-          content={`https://rsinghcodes.vercel.app${router.asPath}`}
+          content={`https://rsinghcodes.netlify.app${router.asPath}`}
         />
         <link
           rel="canonical"
-          href={`https://rsinghcodes.vercel.app${router.asPath}`}
-        /> */}
+          href={`https://rsinghcodes.netlify.app${router.asPath}`}
+        />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Raghvendra Singh" />
         <meta property="og:description" content={meta.description} />

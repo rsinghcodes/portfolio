@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['"Calibre"', ...fontFamily.sans],
-        mono: ['SF Mono', ...fontFamily.mono],
+        mono: ['"SF Mono"', ...fontFamily.mono],
       },
     },
   },

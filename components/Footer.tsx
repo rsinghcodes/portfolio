@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="text-slate-600 dark:text-slate-400 text-xs font-mono leading-4">
         <a
           className="p-2.5"
-          href="https://github.com/"
+          href="https://github.com/rsinghcodes"
           target="_blank"
           rel="noopener noreferrer"
         >
