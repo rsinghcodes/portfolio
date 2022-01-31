@@ -1,7 +1,7 @@
 {
   "name": "Raghvendra Singh",
-  "short_name": "Raghvendra",
-  "description": "Developer with passion for Computer Science.",
+  "short_name": "RaghvendraSingh",
+  "description": "Design-minded frontend software engineer focused on building beautiful interfaces & experiences.",
   "icons": [
     {
       "src": "/favicons/android-chrome-192x192.png",
@@ -14,8 +14,8 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "background_color": "#0f172a",
   "display": "standalone",
   "lang": "en-US",
   "start_url": "../../"

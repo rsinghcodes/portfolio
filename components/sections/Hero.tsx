@@ -1,13 +1,16 @@
 import React from 'react';
 import NextLink from 'next/link';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
     <section className="flex flex-col justify-center items-start w-full min-h-screen">
-      <h2 className="font-mono font-semibold text-cyan-400 dark:text-cyan-300 mb-7">
-        Hi, my name is
+      <h2 className="flex items-center font-mono text-cyan-400 dark:text-cyan-300 mb-7">
+        <span className="mr-2">Hi</span>
+        <Image src="/static/wave.png" alt="" width={20} height={20} />, my name
+        is
       </h2>
-      <h1 className="font-bold text-[40px] leading-[1.1] sm:text-6xl md:text-7xl text-slate-800 dark:text-slate-300">
+      <h1 className="font-bold text-[40px] leading-[1.1]  sm:text-6xl md:text-7xl text-slate-800 dark:text-slate-300">
         Raghvendra Singh.
       </h1>
       <h1 className="font-bold text-[40px] leading-[1.1] sm:text-6xl md:text-7xl mt-2.5 text-slate-600 dark:text-slate-400">

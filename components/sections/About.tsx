@@ -22,21 +22,37 @@ const About = () => {
             <div className="flex-auto relative block text-slate-50 p-5 overflow-auto">
               <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 mt-5">
                 I&apos;m a final year undergraduate student pursuing B.S in IT
-                from Career Point University, Kota. I like designing & building
-                products that positively impact the lives of users. I don&apos;t
-                associate myself with specific tools and technology. They are
-                merely the means to build. This mindset has helped me be a quick
-                learner and concentrate more on solving the problem at hand.
+                from{' '}
+                <span className="text-slate-800 dark:text-slate-300 font-medium">
+                  Career Point University
+                </span>
+                , Kota. I like designing & building products that positively
+                impact the lives of users. I don&apos;t associate myself with
+                specific tools and technology. They are merely the means to
+                build. This mindset has helped me be a{' '}
+                <span className="text-slate-800 dark:text-slate-300 font-medium">
+                  quick learner and concentrate more on solving the problem
+                </span>{' '}
+                at hand.
               </p>
               <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 mt-5">
-                I love exploring newer technologies and developing software
-                solutions and quick hacks. In my free time, I work on my logic
-                building skills and enhancing my programming skills. I always
-                have this 1 % done attitude, The more I learn, the more I want
-                to learn.
+                <span className="text-slate-800 dark:text-slate-300 font-medium">
+                  I love exploring newer technologies
+                </span>
+                , developing software solutions and quick hacks.{' '}
+                <span className="text-slate-800 dark:text-slate-300 font-medium">
+                  In my free time
+                </span>
+                , I work on my logic building skills and enhancing my
+                programming skills. I always have this 1 % done attitude, The
+                more I learn, the more I want to learn.
               </p>
               <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 my-5">
-                A firm believer of Ideas + Technology = Success.
+                A firm believer of{' '}
+                <span className="text-slate-800 dark:text-slate-300 font-medium">
+                  Ideas + Technology = Success
+                </span>
+                .
               </p>
             </div>
           </div>

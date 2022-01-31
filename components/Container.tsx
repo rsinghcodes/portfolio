@@ -26,8 +26,8 @@ const Container = ({ children, title }: ContainerPropsType) => {
   const router = useRouter();
   const meta = {
     title: title,
-    description: `Developer with passion for Computer Science`,
-    // image: "https://rsinghcodes.vercel.app/static/images/banner.png",
+    description: `Design-minded frontend software engineer focused on building beautiful interfaces & experiences`,
+    image: 'https://rsinghcodes.netlify.app/static/banner.png',
     type: 'website',
   };
 
@@ -37,6 +37,7 @@ const Container = ({ children, title }: ContainerPropsType) => {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
+        <meta content={meta.image} name="image" />
         <meta
           property="og:url"
           content={`https://rsinghcodes.netlify.app${router.asPath}`}
@@ -49,11 +50,12 @@ const Container = ({ children, title }: ContainerPropsType) => {
         <meta property="og:site_name" content="Raghvendra Singh" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
+        <meta property="og:image" content={meta.image} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@raghvendrrsingh" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
-        {/* <meta name="twitter:image" content={meta.image} /> */}
+        <meta name="twitter:image" content={meta.image} />
       </Head>
 
       <nav className="flex items-center justify-between w-full py-8 px-6 md:px-12 mx-auto my-0 bg-slate-100 dark:bg-slate-900 sticky-nav bg-opacity-60">
