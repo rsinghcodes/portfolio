@@ -81,5 +81,6 @@ export const projects = [
     description: 'Guess the correct word from the given scrambled word.',
     techs: ['HTML5', 'CSS3', 'JavaScript'],
     code: 'https://github.com/rsinghcodes/Word-Scramble-Game',
+    live: 'https://scrambleword.netlify.app/',
   },
 ];

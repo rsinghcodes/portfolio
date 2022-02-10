@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://rsinghcodes.netlify.app/sitemap.xml
