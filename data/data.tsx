@@ -56,7 +56,7 @@ export const projects = [
     name: 'MyMart',
     description:
       ' An online mini-mart store where the user can do shopping of daily essentials and grocery. Stripe payment gateway as an online payment option and Google Sign-In Authentication workflow.',
-    techs: ['ReactJS', 'Redux', 'M-UI', 'Firebase'],
+    techs: ['ReactJS', 'Redux', 'MUI', 'Firebase'],
     code: 'https://github.com/rsinghcodes/mymart',
     live: 'https://mymartstore.netlify.app/',
   },
@@ -82,5 +82,12 @@ export const projects = [
     techs: ['HTML5', 'CSS3', 'JavaScript'],
     code: 'https://github.com/rsinghcodes/Word-Scramble-Game',
     live: 'https://scrambleword.netlify.app/',
+  },
+  {
+    name: 'E-Cure',
+    description:
+      'An online web-based appointment system through which patients can fix an online appointment with the doctor.',
+    techs: ['TypeScript', 'React', 'Redux', 'Expressjs', 'Node.js', 'MongoDB'],
+    code: 'https://github.com/rsinghcodes/E-cure',
   },
 ];

@@ -14,7 +14,7 @@ const Skills = () => {
       <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 mb-6">
         still a work in progress but working on adding more skills soon...
       </p>
-      <div className="flex flex-row justify-center items-center m-0 p-0 before:block before:w-[1px] before:h-[16.5rem] before:md:h-[182px] before:my-0 before:mr-6 before:bg-slate-600">
+      <div className="flex flex-row justify-center items-center m-0 p-0 before:block before:w-[1px] before:h-80 before:md:h-[182px] before:my-0 before:mr-6 before:bg-slate-600">
         <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-3">
           {skills.map(({ name, src, width, height }, i) => (
             <div className="flex flex-row items-center" key={i}>

@@ -11,7 +11,7 @@ const Projects = () => {
       <h2 className="flex items-center relative mx-0 mb-10 w-full text-slate-800 dark:text-slate-300 text-[26px] sm:text-[2rem] font-semibold leading-tight whitespace-nowrap before:relative before:bottom-1 before:content-['03.'] before:mr-2.5 before:text-cyan-400 before:font-mono before:text-xl md:before:text-2xl before:font-normal after:block after:relative after:-top-[5px] after:w-full after:md:w-[200px] after:xl:w-[300px] after:h-[1px] after:m-[10px] after:sm:ml-5 after:bg-slate-600">
         Projects I&apos;ve Built
       </h2>
-      <ul className="grid gap-4 relative grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 p-0 m-0 list-none">
+      <ul className="grid gap-4 relative grid-cols-1 sm:grid-cols-2 p-0 m-0 list-none">
         {projects.map(({ name, description, techs, code, live }, i) => (
           <li
             className="relative cursor-pointer shadow-lg group hover:-translate-y-2 :focus-within:-translate-y-2"
