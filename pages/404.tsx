@@ -1,9 +1,9 @@
-import React from 'react';
+import type { NextPage } from 'next';
 import NextLink from 'next/link';
 
 import Container from '../components/Container';
 
-const NotFound = () => {
+const NotFound: NextPage = () => {
   return (
     <Container title="Page Not Found | Raghvendra Singh">
       <section className="flex flex-col justify-center items-center w-full max-w-xl min-h-screen">

@@ -98,7 +98,7 @@ const Container = ({ children, title }: ContainerPropsType) => {
           <MobileMenu />
           <NavItem href="/#about" text="01. About" />
           <NavItem href="/#skills" text="02. Skills" />
-          <NavItem href="/#projects" text="03. Projects" />
+          <NavItem href="/projects" text="03. Projects" />
           <NavItem href="/#contact" text="04. Contact" />
         </div>
       </nav>
