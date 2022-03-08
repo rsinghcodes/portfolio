@@ -69,6 +69,14 @@ export const projects = [
     live: 'https://boardbulletin.netlify.app/',
   },
   {
+    name: 'Expense Tracker',
+    description:
+      'Expense Tracker App is a tracking app where user can track his/her daily or monthly income/expense for estimation.',
+    techs: ['TypeScript', 'ReactJS', 'Expressjs', 'MUI', 'MongoDB'],
+    code: 'https://github.com/rsinghcodes/Expense-tracker',
+    live: 'https://expense-trcker.herokuapp.com/',
+  },
+  {
     name: 'Github Profiles',
     description:
       'This app gets the profile of a github user using their github username. Displays user name, user bio, number of following, number of followers, number of repositories, etc.',
