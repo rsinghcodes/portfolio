@@ -45,6 +45,14 @@ export const skills = [
 
 export const projects = [
   {
+    name: 'InterCup - An interview preparation platform',
+    description:
+      'InterCup is an interview preparation platform, where users can check their knowledge on a specific topic or can prepare for interview questions. It provides previously asked interview questions, attempting quizzes based on real interview assessments.',
+    techs: ['ReactJS', 'MUI', 'Expressjs', 'Nodejs', 'MongoDB'],
+    code: 'https://github.com/rsinghcodes/InterCup',
+    live: 'https://intercup.netlify.app/',
+  },
+  {
     name: 'ReadList',
     description:
       'ReadList is a blog web application where people can share writings, content and their ideas online. This app allows readers to read, like, comment and share on social handles.',
