@@ -4,20 +4,22 @@ import { SiHackerrank } from 'react-icons/si';
 export const email = 'raghvendrrsingh@gmail.com';
 
 export const socials = [
-  { link: 'https://github.com/rsinghcodes', icon: <FiGithub size={20} /> },
-
+  {
+    link: 'https://github.com/rsinghcodes',
+    icon: <FiGithub size={20} />
+  },
   {
     link: 'https://twitter.com/raghvendrrsingh',
-    icon: <FiTwitter size={20} />,
+    icon: <FiTwitter size={20} />
   },
   {
     link: 'https://linkedin.com/in/raghvendrrsingh',
-    icon: <FiLinkedin size={20} />,
+    icon: <FiLinkedin size={20} />
   },
   {
     link: 'https://hackerrank.com/rsinghcodes',
-    icon: <SiHackerrank size={20} />,
-  },
+    icon: <SiHackerrank size={20} />
+  }
 ];
 
 export const skills = [
@@ -32,7 +34,7 @@ export const skills = [
     name: 'Tailwind CSS',
     src: '/icons/tailwind-css.png',
     width: 24,
-    height: 14,
+    height: 14
   },
   { name: 'Node.js', src: '/icons/node-js.png', width: 24, height: 24 },
   { name: 'GraphQL', src: '/icons/graphql.png', width: 24, height: 24 },
@@ -40,7 +42,7 @@ export const skills = [
   { name: 'MongoDB', src: '/icons/mongodb.png', width: 24, height: 24 },
   { name: 'Git', src: '/icons/git.png', width: 24, height: 24 },
   { name: 'Python', src: '/icons/python.png', width: 24, height: 24 },
-  { name: 'MySQL', src: '/icons/mysql.png', width: 24, height: 24 },
+  { name: 'MySQL', src: '/icons/mysql.png', width: 24, height: 24 }
 ];
 
 export const projects = [
@@ -50,7 +52,7 @@ export const projects = [
       'InterCup is an interview preparation platform, where users can check their knowledge on a specific topic or can prepare for interview questions. It provides previously asked interview questions, attempting quizzes based on real interview assessments.',
     techs: ['ReactJS', 'MUI', 'Expressjs', 'Nodejs', 'MongoDB'],
     code: 'https://github.com/rsinghcodes/InterCup',
-    live: 'https://intercup.netlify.app/',
+    live: 'https://intercup.netlify.app/'
   },
   {
     name: 'ReadList',
@@ -58,7 +60,7 @@ export const projects = [
       'ReadList is a blog web application where people can share writings, content and their ideas online. This app allows readers to read, like, comment and share on social handles.',
     techs: ['ReactJS', 'ChakraUI', 'GraphQL', 'MongoDB'],
     code: 'https://github.com/rsinghcodes/ReadList',
-    live: 'https://readlistapp.netlify.app/',
+    live: 'https://readlistapp.netlify.app/'
   },
   {
     name: 'MyMart',
@@ -66,7 +68,7 @@ export const projects = [
       ' An online mini-mart store where the user can do shopping of daily essentials and grocery. Stripe payment gateway as an online payment option and Google Sign-In Authentication workflow.',
     techs: ['ReactJS', 'Redux', 'MUI', 'Firebase'],
     code: 'https://github.com/rsinghcodes/mymart',
-    live: 'https://mymartstore.netlify.app/',
+    live: 'https://mymartstore.netlify.app/'
   },
   {
     name: 'Bulletin Board',
@@ -74,7 +76,7 @@ export const projects = [
       'An app to write anything on the board like reading list, brainstorming ideas, upcoming appointments, to-do lists, and many more creative things.',
     techs: ['ReactJS', 'ChakraUI'],
     code: 'https://github.com/rsinghcodes/Bulletin-Board',
-    live: 'https://boardbulletin.netlify.app/',
+    live: 'https://boardbulletin.netlify.app/'
   },
   {
     name: 'Expense Tracker',
@@ -82,7 +84,7 @@ export const projects = [
       'Expense Tracker App is a tracking app where user can track his/her daily or monthly income/expense for estimation.',
     techs: ['TypeScript', 'ReactJS', 'Expressjs', 'MUI', 'MongoDB'],
     code: 'https://github.com/rsinghcodes/Expense-tracker',
-    live: 'https://expense-trcker.herokuapp.com/',
+    live: 'https://expense-trcker.herokuapp.com/'
   },
   {
     name: 'Github Profiles',
@@ -90,20 +92,20 @@ export const projects = [
       'This app gets the profile of a github user using their github username. Displays user name, user bio, number of following, number of followers, number of repositories, etc.',
     techs: ['ReactJS', 'CSS3'],
     code: 'https://github.com/rsinghcodes/github-profiles',
-    live: 'https://profilesgithub.netlify.app/',
+    live: 'https://profilesgithub.netlify.app/'
   },
   {
     name: 'Word Scramble Game',
     description: 'Guess the correct word from the given scrambled word.',
     techs: ['HTML5', 'CSS3', 'JavaScript'],
     code: 'https://github.com/rsinghcodes/Word-Scramble-Game',
-    live: 'https://scrambleword.netlify.app/',
+    live: 'https://scrambleword.netlify.app/'
   },
   {
     name: 'E-Cure',
     description:
       'An online web-based appointment system through which patients can fix an online appointment with the doctor.',
     techs: ['TypeScript', 'React', 'Redux', 'Expressjs', 'Node.js', 'MongoDB'],
-    code: 'https://github.com/rsinghcodes/E-cure',
-  },
+    code: 'https://github.com/rsinghcodes/E-cure'
+  }
 ];
