@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import useDelayedRender from '../lib/use-delayed-render';
 import styles from '../styles/mobile-menu.module.css';
@@ -11,7 +11,7 @@ export default function MobileMenu() {
     isMenuOpen,
     {
       enterDelay: 20,
-      exitDelay: 300,
+      exitDelay: 300
     }
   );
 

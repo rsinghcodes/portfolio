@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-
-import NavItem from './NavItem';
-import Social from './Social';
+import React, { useEffect, useState } from 'react';
+import { email } from '../data/data';
 import Footer from './Footer';
 import MobileMenu from './MobileMenu';
-
-import { email } from '../data/data';
+import NavItem from './NavItem';
+import Social from './Social';
 
 interface ContainerPropsType {
   children: React.ReactNode;
@@ -28,7 +26,7 @@ const Container = ({ children, title }: ContainerPropsType) => {
     title: title,
     description: `Design-minded frontend software engineer focused on building beautiful interfaces & experiences`,
     image: 'https://rsinghcodes.netlify.app/static/banner.png',
-    type: 'website',
+    type: 'website'
   };
 
   return (

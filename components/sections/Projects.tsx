@@ -1,5 +1,5 @@
-import React from 'react';
 import NextLink from 'next/link';
+import React from 'react';
 import { FiExternalLink, FiFolder, FiGithub } from 'react-icons/fi';
 import { projects } from '../../data/data';
 

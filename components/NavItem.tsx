@@ -1,7 +1,6 @@
-import React from 'react';
-import { useRouter } from 'next/router';
-import NextLink from 'next/link';
 import cn from 'classnames';
+import NextLink from 'next/link';
+import { useRouter } from 'next/router';
 
 function NavItem({ href, text }: { href: string; text: string }) {
   const router = useRouter();

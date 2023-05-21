@@ -1,4 +1,3 @@
-import React from 'react';
 import { email } from '../../data/data';
 
 const Contact = () => {
