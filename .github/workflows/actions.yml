@@ -1,0 +1,25 @@
+name: Portfolio Deploy to Netlify
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        uses: netlify/cli@v1
+        with:
+          token: ${{ secrets.NETLIFY_TOKEN }}
+          site: ${{ secrets.NETLIFY_SITE }}
+          build_dir: ./out
