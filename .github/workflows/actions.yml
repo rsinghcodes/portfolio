@@ -38,7 +38,8 @@ jobs:
       - name: 🚀 Deploy to Netlify
         uses: netlify/actions/cli@master
         with:
-          args: deploy --prod --dir=out
+          args: deploy --prod --dir=.next
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_DEPLOY_URL: ${{ steps.build.outputs.public_url }}

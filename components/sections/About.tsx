@@ -19,38 +19,35 @@ const About = () => {
           <div className="relative min-h-0 flex-auto flex flex-col">
             <div className="flex-auto relative block text-slate-50 p-5 overflow-auto">
               <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 mt-5">
-                I&apos;m a final year undergraduate student pursuing B.S in IT
-                from{' '}
+                I am a recent graduate with a{' '}
                 <span className="text-slate-800 dark:text-slate-300 font-medium">
-                  Career Point University
+                  Bachelor of Science degree in Information Technology
                 </span>
-                , Kota. I like designing & building products that positively
-                impact the lives of users. I don&apos;t associate myself with
-                specific tools and technology. They are merely the means to
-                build. This mindset has helped me be a{' '}
-                <span className="text-slate-800 dark:text-slate-300 font-medium">
-                  quick learner and concentrate more on solving the problem
-                </span>{' '}
-                at hand.
+                . I am passionate about designing and building products that
+                have a positive impact on the lives of users. I am not limited
+                to any specific tools or technologies, as I believe that they
+                are simply a means to build. This mindset has allowed me to be a
+                quick learner and to focus on solving the problem at hand.
               </p>
               <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 mt-5">
+                I am always eager to learn new things and to push the boundaries
+                of what is possible.{' '}
                 <span className="text-slate-800 dark:text-slate-300 font-medium">
-                  I love exploring newer technologies
-                </span>
-                , developing software solutions and quick hacks.{' '}
-                <span className="text-slate-800 dark:text-slate-300 font-medium">
-                  In my free time
-                </span>
-                , I work on my logic building skills and enhancing my
-                programming skills. I always have this 1 % done attitude, The
-                more I learn, the more I want to learn.
+                  In my free time,
+                </span>{' '}
+                I enjoy exploring new technologies, developing software
+                solutions, and creating quick hacks. I am also constantly
+                working to improve my logic building skills and my programming
+                skills. I have a 1% done attitude, which means the more I learn,
+                the more I want to learn. I believe that there is always room
+                for improvement, and I am always striving to learn more and to
+                become a better engineer.
               </p>
               <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 my-5">
-                A firm believer of{' '}
-                <span className="text-slate-800 dark:text-slate-300 font-medium">
-                  Ideas + Technology = Success
-                </span>
-                .
+                I am confident that I have the skills and experience necessary
+                to be a valuable asset to any team. I am a hard worker, always
+                willing to learn new things, and look for ways to improve. I
+                have passion to make a positive impact on the world.
               </p>
             </div>
           </div>
