@@ -77,7 +77,7 @@ const Projects = () => {
           ))}
       </ul>
       <div className="flex justify-center space-x-6 text-sm mt-10">
-        <NextLink legacyBehavior href="/projects">
+        <NextLink href="/projects">
           <a className="text-cyan-400 dark:text-cyan-300 bg-transparent border-[1px] border-solid border-cyan-400 dark:border-cyan-300 rounded text-sm font-mono cursor-pointer no-underline transition-all duration-[0.25s] ease-[cubic-bezier(0.645, 0.045, 0.355, 1)] py-5 px-7">
             View all
           </a>

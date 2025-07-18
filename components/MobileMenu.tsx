@@ -54,7 +54,7 @@ export default function MobileMenu() {
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
             style={{ transitionDelay: '150ms' }}
           >
-            <Link legacyBehavior href="/#about">
+            <Link href="/#about">
               <a className="flex w-auto pb-4" onClick={toggleMenu}>
                 About
               </a>
@@ -64,7 +64,7 @@ export default function MobileMenu() {
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
             style={{ transitionDelay: '175ms' }}
           >
-            <Link legacyBehavior href="/#skills">
+            <Link href="/#skills">
               <a className="flex w-auto pb-4" onClick={toggleMenu}>
                 Skills
               </a>
@@ -74,7 +74,7 @@ export default function MobileMenu() {
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
             style={{ transitionDelay: '200ms' }}
           >
-            <Link legacyBehavior href="/projects">
+            <Link href="/projects">
               <a className="flex w-auto pb-4" onClick={toggleMenu}>
                 Projects
               </a>
@@ -84,7 +84,7 @@ export default function MobileMenu() {
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
             style={{ transitionDelay: '350ms' }}
           >
-            <Link legacyBehavior href="/#contact">
+            <Link href="/#contact">
               <a className="flex w-auto pb-4" onClick={toggleMenu}>
                 Contact
               </a>

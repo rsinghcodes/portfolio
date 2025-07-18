@@ -19,7 +19,7 @@ const NotFound: NextPage = () => {
           wrong. Can you double check that URL?
         </p>
         <div className="mt-6 sm:mt-10 flex justify-center space-x-6 text-sm">
-          <NextLink legacyBehavior href="/">
+          <NextLink href="/">
             <a className="text-cyan-400 dark:text-cyan-300 bg-transparent border-[1px] border-solid border-cyan-400 dark:border-cyan-300 rounded text-sm font-mono cursor-pointer no-underline transition-all duration-[0.25s] ease-[cubic-bezier(0.645, 0.045, 0.355, 1)] py-5 px-7">
               Return Home
             </a>
